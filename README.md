@@ -13,4 +13,5 @@ Here are some grammar in the Latex Template:
   \resumeSubheading{Organization Name}{Address}{Position}{Time Period}
 
 ## Preview
-![Preview](ReumePreview.png)
+![Preview-1](cv-en-1.png)
+![Preview-2](cv-en-2.png)
