@@ -17,6 +17,9 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
+\setlength{\parindent}{0pt}
+\newcommand{\forceindent}{\leavevmode{\parindent=1em\indent}}
+
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
@@ -73,6 +76,9 @@
    &Github: \href{https://github.com/YangtaoGe518}{YangtaoGe518}
 \end{tabular*}
 
+%-----Personal Interests----------
+\section{Academic Interests}
+\forceindent I am interested in software engineering with focuses on bug diagnosis, log analysis and performance issues for large scale open source system. I currently investigate fuzzing techniques on GPU devices. I am also interested in software engineering architecture design such as creating continuous CI/CD process and cloud services.
 
 %-----------EDUCATION-----------------
 \section{Education}
@@ -90,15 +96,14 @@
     \resumeItemListStart
         \resumeItem{Java}{Excellent skills in building server-based applications by using Java including Netty protocol 
         server developing and Spring Boot web server developing over actual production environment in large scale projects.}
+        \resumeItem{Golang}{Good understanding of Golang and experiences of developing microservice backend RESTful API using Gin framework}
         \resumeItem{React Native}{Proficient developing using React Native and Redux to implement mobile app for both Android and IOS Platform
         and creating releases using TestFairy.}
         \resumeItem{JavaSript, TypeScript \& Node.js}{Good understanding of JavaSript and its extension language and able to use those languages to create both backend (Express) and frontend (React.js). }
-        \resumeItem{Cloud Services}{Industrial experiences in both Azure and AWS in web server and database services.}
+        \resumeItem{Dockerization and Cloud Services}{Industrial experiences in both Azure and AWS in web server and database services, and experience of dockerizing web servers as images and deploy CI/CD pipeline}
         \resumeItem{Git \& Verison Control}{Good knowledge of using git and Github to do local and remote version control.}
         \resumeItem{SQL \& NoSQL}{Good knowledge in managing SQL databases on Java Spring Boot using JPA and using node.js to manipulate NO-SQL database such as AWS DynamoDB using Node.js.}
-        \resumeItem{Hardwares}{Unversity project based experiences for Arduino, CC3200 and Intel FPGA Board.}
         \resumeItem{Other Programming Languages}{C/C++, Python, Haskell, Shell, C\#, \LaTeX.}
-        \resumeItem{Multi-Language User}{Proficient English and Chinese user for communication and writing, Waystage level French.}
     \resumeItemListEnd
 
 %-----------EXPERIENCE-----------------
@@ -168,17 +173,13 @@
 
   \resumeSubHeadingListStart
     \resumeSubheading
-    {Smart Street Cleaning IoT Project}{London, UK}
-    {Team Leader \& System Designer}{}
+    {Ophidia Technologies: Smart Label Project}{London, UK}
+    {Tech Team Leader \& Full stack developer}{}
     \resumeItemListStart
-      \resumeItem{Project Idea \& Architecture}
-          {Making the project brief and MoSCoW list for producing a Internet of Things system to detect the dirtiness of the Street
-          and propose the system architecture diagram as a reference.}
-      \resumeItem{UI prototype}
-          {Developing the user interface using React.Js to produce website which indicates the dirtiness level of the streets on certain area on Google Map.}
-      \resumeItem{Machine Learning Research}
-          {Investigating the relationship between parameters captured from the sensor and the dirtiness level by statistical model and machine learning techniques
-          and research the possibility using RNN to identify the garbage on the street from the CCTV images.}
+      \resumeItem{Architecture Design}
+          {Leading the software engineering team with 3 members and design the software architecture for the full stack application for smart e-ink label.}
+      \resumeItem{Dockerization and Cloud Integration}
+          {Dockerize the backend API as docker image and create a CI/CD pipeline for continues development onto AWS cloud service}
     \resumeItemListEnd
     \resumeSubheading
     {AMEX Challenge Hackathon}{London, UK}
@@ -206,7 +207,7 @@
 
     \resumeSubheading
     {Visual Mapping App for ANCSSC}{London, UK}
-    {Backend Developer}{Score: 76/100}
+    {Backend Developer}{Score: 73/100}
     \resumeItemListStart
       \resumeItem{API Provider Developing}
           {Using Java Spring Boot to provide APIs for the frontend to obtain the NGOs' project coordinates and 
