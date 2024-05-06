@@ -43,6 +43,12 @@
   }
 }
 
+\newcommand{\resumeSubItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
@@ -51,14 +57,15 @@
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubItemListStart}{\begin{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
 %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -93,16 +100,28 @@ Accomplished Backend Software Engineer with two years of full-time experience at
 %--------PROGRAMMING SKILLS------------
 \section{Personal Skills}
     \resumeItemListStart
-        \resumeItem{Java}{Excellent skills in building server-based applications using Java and related frameworks including Netty protocol, Spring Boot and gRPC protocol over actual production environment in large scale projects.}
-        \resumeItem{Golang}{Good understanding of Golang and experience in developing microservice backend RESTful API using Gin framework.}
-        \resumeItem{React Native}{Proficient in developing using React Native and Redux to implement mobile apps for both Android and IOS Platform
-        and creating releases using TestFairy.}
-        \resumeItem{JavaSript, TypeScript \& Node.js}{Good understanding of JavaSript and its extension language and able to use those languages to create both backend (Express) and frontend (React.js). }
-        \resumeItem{C/C++}{Fundamental understanding of C++ in the LLVM framework and Clang compiler and also usage of CMake to build C++ project using Ninja.}
-        \resumeItem{SQL \& NoSQL}{Good knowledge in managing SQL databases on Java Spring Boot using JPA and using node.js to manipulate NON-SQL databases such as AWS DynamoDB using Node.js.}
-        \resumeItem{Dockerization and Cloud Services}{Industrial experiences in Google Cloud, Azure and AWS web server and database services, and experience in dockerizing web servers as images and deploying CI/CD pipeline.}
-        \resumeItem{Git \& Verison Control}{Good knowledge of using git and GitHub to do local and remote version control.}
-        \resumeItem{Other Programming Languages}{Python, Haskell, Shell, C\#, \LaTeX.}
+        \resumeItem{Programming Languages}{
+          \resumeSubItemListStart
+            \resumeSubItem{Java}{Good proficiency in building scalable server-side applications using Spring framework and Gradle.}
+            \resumeSubItem{Golang}{Proficient in building concurrent applications, primarily for microservices using Chi and Gin framework.}
+            \resumeSubItem{Python}{Skilled in scripting and automation, as well as backend development in AWS lambda.}
+            \resumeSubItem{Other Languages}{C/C++ (Competent); JavaScript (Proficient); SQL (Proficient)}
+          \resumeSubItemListEnd
+        }
+        \resumeItem{Cloud Platform \& Tools}{
+          \resumeSubItemListStart
+            \resumeSubItem{AWS}{Experienced with EC2, SQS, S3, and Lambda for cloud-based applications.}
+            \resumeSubItem{Docker}{Strong capabilities in containerization and version control of deployment environments.}
+            \resumeSubItem{Kubernetes \& ECS}{Proficient in orchestrating and managing containerized applications in AWS EKS and ECS}
+          \resumeSubItemListEnd
+        }
+        \resumeItem{DevOp \& Analytic}{
+          \resumeSubItemListStart
+            \resumeSubItem{GitLab/GitHub}{Proficient with git for version control and building CI/CD pipelines.}
+            \resumeSubItem{OpenSearch}{Implemented for search and log analysis solutions using Fluentd in containerized environments.}
+            \resumeSubItem{Datadog \& Grafana}{Proficient in building interactive dashboards for real-time data visualization and analytics.}
+          \resumeSubItemListEnd
+        }
     \resumeItemListEnd
 
 %-----------EXPERIENCE-----------------
