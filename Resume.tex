@@ -130,14 +130,27 @@ Accomplished Backend Software Engineer with two years of industry experiences at
   {Smartsheet}{London, UK}
   {Software Engineer II}{Jan. 2023 - Present}
   \resumeItemListStart
-    \resumeItem{Golang Microservices}
-      {Developed backend API services using the Golang CHI framework to facilitate access to cell history data from an S3 bucket. Optimized data retrieval processes by implementing parallel fetches with goroutines, enhancing performance by 20\% on P95 latency measures.}
-    \resumeItem{ECS Deployment and Optimization}
-      {AWS ECS cluster to deploy containerized microservices, enhancing system scalability and reliability. Optimized auto-scaling and resource allocation through rigorous load testing with Locust, achieving a 20\% reduction in operational costs.}
-    \resumeItem{Analytic Tool Integration}
-      {Integrated FluentD as a log layer to streamline the delivery of application logs to OpenSearch via AWS Kinesis Stream. Developed and implemented a Datadog dashboard for real-time data visualization, significantly enhancing incident response times by enabling quicker issue identification.}
-    \resumeItem{GitLab CI/CD Pipeline}
-      {Implemented deployment pipelines using GitLab Runner for automated validation and promotion of container images. This initiative accelerated the team's development cycle by 50\%, improving deployment efficiency on AWS ECS clusters.}
+    \resumeItem{Technical Innovation \& Leadership}{
+        \begin{itemize}
+          \item Architected and led the Async Move History Project, transforming a synchronous system into an event-driven architecture that eliminated API gateway timeout errors and reduced system latency by 70\%.
+          \item Spearheaded cross-functional collaboration with Grid Services and Grid Coordination teams to resolve two critical customer escalations affecting enterprise clients with "whale grids" (10M+ history records).
+          \item Achieved 50\% cost reduction through strategic system redesign, legacy system deprecation, and optimization of API service resources, delivering significant ROI.
+          \item Mentored junior engineers through structured pair programming and knowledge sharing sessions, enabling them to contribute independently to mission-critical projects.
+        \end{itemize}
+      }
+    \resumeItem{DevOps Excellence}{        
+      \begin{itemize}
+        \item Designed and implemented a company-wide centralized ECS pipeline (adopted as part of PEAK initiative) that standardized deployment processes and improved security posture, also slashed the new service onboarding time from weeks to under 24 hours through template standardization and process automation.
+        \item Pioneered the adoption of Graviton instances and multi-architecture builds, reducing ECS operational costs by 25\% while maintaining performance.
+        \item Created hardened, secure container images with automated vulnerability scanning, establishing new security standards for the organization.
+      \end{itemize}
+    }
+    \resumeItem{Core Technical Contributions}{
+      \begin{itemize}
+        \item Developed and optimized Golang microservices (CHI framework) that improved P95 latency by 20\% through efficient goroutine parallelization and caching strategies.
+        \item Implemented comprehensive observability solution integrating FluentD, OpenSearch, and Datadog dashboards, reducing Mean Time To Resolution for production incidents by 35\%.
+      \end{itemize}
+    }
   \resumeItemListEnd
   \resumeSubheading
   {Spotify}{London, UK}
@@ -164,17 +177,17 @@ Accomplished Backend Software Engineer with two years of industry experiences at
   \resumeItemListEnd
 
   %-----------EXPERIENCE: Healios (React Native)-----------------
-  % \resumeSubheading
-  % {Healios}{London, UK}
-  % {React Native Developer}{Dec. 2020 - Jun. 2021}
-  % \resumeItemListStart
-  %   \resumeItem{React Native Development}
-  %     {Participated in the development of "ThinkNinja," an NHS-affiliated app designed to educate children about mental health, utilizing React Native and TypeScript. Successfully implemented multi-language support, which enhancing user accessibility and engagement.}
-  %   \resumeItem{Code Quality and Efficiency}
-  %     {Improved code robustness and maintainability by integrating TypeScript and ESLint. Optimized development workflows by configuring Redux for state management and Redux-Saga for handling asynchronous operations, thereby boosting overall code efficiency.}
-  %   \resumeItem{Continuous Integration and Testing}
-  %     {Integrated TestFairy to streamline internal app distributions. Developed and implemented a continuous integration pipeline that reduced deployment cycles by 30\%, substantially enhancing team productivity and application reliability.}
-  % \resumeItemListEnd
+  \resumeSubheading
+  {Healios}{London, UK}
+  {React Native Developer}{Dec. 2020 - Jun. 2021}
+  \resumeItemListStart
+    \resumeItem{React Native Development}
+      {Participated in the development of "ThinkNinja," an NHS-affiliated app designed to educate children about mental health, utilizing React Native and TypeScript. Successfully implemented multi-language support, which enhancing user accessibility and engagement.}
+    \resumeItem{Code Quality and Efficiency}
+      {Improved code robustness and maintainability by integrating TypeScript and ESLint. Optimized development workflows by configuring Redux for state management and Redux-Saga for handling asynchronous operations, thereby boosting overall code efficiency.}
+    \resumeItem{Continuous Integration and Testing}
+      {Integrated TestFairy to streamline internal app distributions. Developed and implemented a continuous integration pipeline that reduced deployment cycles by 30\%, substantially enhancing team productivity and application reliability.}
+  \resumeItemListEnd
 
 
 %-----------EXPERIENCE: EMIS (Backend & Data)-----------------
