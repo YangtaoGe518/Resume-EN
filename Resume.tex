@@ -104,9 +104,9 @@ Senior Backend Software Engineer with demonstrated expertise in cloud architectu
     \resumeItemListStart
         \resumeItem{Programming Languages}{
           \resumeSubItemListStart
-            \resumeSubItem{Java}{Proficient in building scalable server-side applications using Spring Framework and Gradle.}
             \resumeSubItem{Golang}{Proficient in building concurrent applications, primarily for microservices using Chi and Gin frameworks.}
             \resumeSubItem{Python}{Skilled in scripting and automation, as well as backend development with AWS Lambda.}
+            \resumeSubItem{Java}{Proficient in building scalable server-side applications using Spring Framework and Gradle. Experienced with Apache Flink for stream processing and real-time data ingestion from AWS Kinesis.}
             \resumeSubItem{Other Languages}{C/C++ (Competent); JavaScript (Proficient); SQL (Proficient)}
           \resumeSubItemListEnd
         }
@@ -151,7 +151,7 @@ Senior Backend Software Engineer with demonstrated expertise in cloud architectu
     \resumeItem{Core Technical Contributions}{
       \begin{itemize}
         \item Developed and optimized Golang microservices (CHI framework) that improved P95 latency by 20\% through efficient goroutine parallelization and caching strategies.
-        \item Implemented comprehensive observability solution integrating FluentD, OpenSearch, and Datadog dashboards, reducing Mean Time To Resolution for production incidents by 35\%.
+        \item Built real-time customer actions ingestion pipeline using Apache Flink to process high-volume AWS Kinesis streams, implementing parallel data paths: writing to S3 as Parquet files for cost-effective cold storage and simultaneously ingesting to DynamoDB for low-latency hot data access, handling millions of events per second with sub-second latency.
       \end{itemize}
     }
   \resumeItemListEnd
