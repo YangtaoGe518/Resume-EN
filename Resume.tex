@@ -134,26 +134,26 @@ Senior Backend Software Engineer with demonstrated expertise in cloud architectu
   {Smartsheet}{London, UK}
   {Software Engineer II}{Jan. 2023 - Present}
   \resumeItemListStart
-    \resumeItem{Technical Innovation \& Leadership}{
+    \resumeItem{Asynchronous Distributed Data Processing System}{
         \begin{itemize}
-          \item Architected and led the Async Move History Project using Python, building a distributed asynchronous system with multiple workers orchestrated through AWS SQS and DynamoDB distributed lock tables. Leveraged Apache Arrow for efficient Parquet file read/write operations with concurrent data transformations while maintaining optimal memory usage, eliminating API gateway timeout errors and reducing system latency by 70\%.
-          \item Designed Python-based distributed processing pipeline with SQS message queuing and DynamoDB for coordination, orchestrating parallel workers for data transformation tasks while ensuring data integrity and efficiency through Apache Arrow's columnar processing capabilities.
-          \item Spearheaded cross-functional collaboration with other service teams to resolve two critical customer escalations affecting enterprise clients with "whale grids" (10M+ history records).
-          \item Achieved 50\% cost reduction through strategic system redesign, legacy system deprecation, and optimization of API service resources, delivering significant ROI.
-          % \item Mentored junior engineers through structured pair programming and knowledge sharing sessions, enabling them to contribute independently to mission-critical projects.
+          \item Architected and led Python-based distributed asynchronous system with multiple workers orchestrated through AWS SQS and DynamoDB distributed lock tables, eliminating API gateway timeout errors and reducing system latency by 70\%.
+          \item Implemented Apache Arrow for efficient Parquet file read/write operations with concurrent data transformations, processing 10M+ history records for enterprise "whale grids" while maintaining optimal memory usage.
+          \item Designed Python distributed processing pipeline with SQS message queuing and DynamoDB for coordination, ensuring data integrity through Apache Arrow's columnar processing capabilities.
+          \item Achieved 50\% cost reduction through strategic system redesign and legacy system deprecation, resolving two critical customer escalations affecting enterprise clients.
         \end{itemize}
       }
-    \resumeItem{DevOps Excellence}{        
+    \resumeItem{Real-Time Event Ingestion Pipeline}{
+        \begin{itemize}
+          \item Built high-throughput data ingestion pipeline using Apache Flink to process AWS Kinesis streams, handling millions of events per second with sub-second latency.
+          \item Implemented dual data paths architecture: writing to S3 as Parquet files for cost-effective cold storage while simultaneously ingesting to DynamoDB for low-latency hot data access.
+          \item Designed stream processing solution that improved data availability by 40\% while reducing storage costs through intelligent tiering between hot and cold data paths.
+        \end{itemize}
+      }
+    \resumeItem{DevOps Excellence \& Infrastructure}{        
       \begin{itemize}
-        \item Designed and implemented a company-wide centralized ECS pipeline (adopted as part of PEAK initiative) that standardized deployment processes and improved security posture, also slashed the new service onboarding time from weeks to under 24 hours through template standardization and process automation.
-        \item Pioneered the adoption of Graviton instances and multi-architecture builds, reducing ECS operational costs by 25\% while maintaining performance.
+        \item Designed and implemented company-wide centralized ECS pipeline (adopted as part of PEAK initiative), reducing service onboarding time from weeks to under 24 hours through template standardization and process automation.
+        \item Pioneered adoption of Graviton instances and multi-architecture builds, reducing ECS operational costs by 25\% while maintaining performance.
         \item Created hardened, secure container images with automated vulnerability scanning, establishing new security standards for the organization.
-      \end{itemize}
-    }
-    \resumeItem{Core Technical Contributions}{
-      \begin{itemize}
-        \item Developed and optimized Golang microservices (CHI framework) that improved P95 latency by 20\% through efficient goroutine parallelization and caching strategies.
-        \item Built real-time customer actions ingestion pipeline using Apache Flink to process high-volume AWS Kinesis streams, implementing parallel data paths: writing to S3 as Parquet files for cost-effective cold storage and simultaneously ingesting to DynamoDB for low-latency hot data access, handling millions of events per second with sub-second latency.
       \end{itemize}
     }
   \resumeItemListEnd
@@ -229,6 +229,17 @@ Senior Backend Software Engineer with demonstrated expertise in cloud architectu
 \section{Projects}
   \resumeSubHeadingListStart
     \resumeSubheading
+    {Open Lab: Anxiety Trigger Detection System}{Newcastle, UK}
+    {Lead Developer}{Oct. 2024 - Sept. 2025}
+    \resumeItemListStart
+      \resumeItem{Privacy-Focused AI Architecture}
+          {Designed and implemented a privacy-first social media analysis system using Python and YOLO object detection models to anonymize sensitive information (usernames, avatars, timestamps) server-side before LLM processing. Deployed custom-trained YOLO models within AWS Lambda for real-time PII detection and masking.}
+      \resumeItem{Prompt Engineering \& Multi-Modal Analysis}
+          {Developed sophisticated prompt engineering framework enabling researchers to test different prompt configurations across multiple AI providers (OpenAI, AWS Bedrock, Claude) with user-specific customization. Implemented multi-modal analysis pipeline processing both image and text content to identify anxiety triggers with language-specific prompts for English and Chinese.}
+      \resumeItem{Serverless Python Pipeline}
+          {Built event-driven processing pipeline using Python Lambda functions, EventBridge, and SQS for asynchronous image processing. Integrated YOLO models for object detection, achieving sub-second anonymization while maintaining 99\% accuracy in PII identification across light/dark theme variations.}
+    \resumeItemListEnd
+    \resumeSubheading
     {Fuzz Testing for DPC++}{London, UK}
     {Individual Project Researcher}{Sept. 2021 - Jun. 2022}
     \resumeItemListStart
@@ -239,15 +250,15 @@ Senior Backend Software Engineer with demonstrated expertise in cloud architectu
       \resumeItem{LLVM \& Clang}
           {Implement the testing framework under LLVM compiler infrastructure and use Clang LibTooling API to instrument target program automatically on AST level.}
     \resumeItemListEnd
-    \resumeSubheading
-    {Ophidia Technologies: Smart Label Project}{London, UK}
-    {Tech Team Leader \& Full stack developer}{Jun. 2021 - Dec. 2021}
-    \resumeItemListStart
-      \resumeItem{Leadership and Architecture Design}
-          {Led a team of three software engineers in the design and development of a full stack application for smart e-ink labels. Spearheaded the software architecture planning, ensuring optimal integration of front-end and back-end components for enhanced performance and scalability.}
-      \resumeItem{Dockerization and Pipeline}
-          {Successfully dockerized the backend API, facilitating smoother, more reliable deployments. Engineered and deployed a CI/CD pipeline on AWS, improving development workflow and deployment efficiency by automating updates and testing processes.}
-    \resumeItemListEnd
+    % \resumeSubheading
+    % {Ophidia Technologies: Smart Label Project}{London, UK}
+    % {Tech Team Leader \& Full stack developer}{Jun. 2021 - Dec. 2021}
+    % \resumeItemListStart
+    %   \resumeItem{Leadership and Architecture Design}
+    %       {Led a team of three software engineers in the design and development of a full stack application for smart e-ink labels. Spearheaded the software architecture planning, ensuring optimal integration of front-end and back-end components for enhanced performance and scalability.}
+    %   \resumeItem{Dockerization and Pipeline}
+    %       {Successfully dockerized the backend API, facilitating smoother, more reliable deployments. Engineered and deployed a CI/CD pipeline on AWS, improving development workflow and deployment efficiency by automating updates and testing processes.}
+    % \resumeItemListEnd
     % \resumeSubheading
     % {AMEX Challenge Hackathon}{London, UK}
     % {Full Stack Developer}{Best Design Prize}
@@ -282,6 +293,7 @@ Senior Backend Software Engineer with demonstrated expertise in cloud architectu
     %       {Use Azure Web Server to deploy the API provider of the tool and initialise the Azure Pipeline to
     %        execute the auto deployment.}
     % \resumeItemListEnd
+
   \resumeSubHeadingListEnd
 
 %-------------------------------------------
